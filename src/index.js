@@ -1,1 +1,3 @@
-alert("Javascript is working");
+import "./styles.css";
+import "./api.js";
+import "./dom.js"
