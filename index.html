@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <style>
+      .container {
+        flex-direction: column;
+        align-items: center;
+        width: min(90vw, 760px);
+        box-sizing: border-box;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+
+      form input,
+      form button {
+        padding: 8px 12px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid teal;
+      }
+
+      form button {
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+      }
+
+      form button:disabled {
+        opacity: 0.6;
+        cursor: wait;
+      }
+
+      .weather-header {
+        text-align: center;
+      }
+
+      .weather-header > p {
+        color: #555;
+        font-size: 14px;
+      }
+
+      .weather-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .weather-cards div.display {
+        min-width: 150px;
+        background-color: white;
+      }
+
+      .message {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .message.error {
+        color: firebrick;
+      }
+    </style>
+  <script defer src="main.js"></script></head>
+  <body>
+    <h1>⛅ Weather app</h1>
+    <form>
+      <label for="location">Search for a location</label>
+      <input
+        id="location"
+        type="text"
+        name="location"
+        placeholder="For example: Hanoi"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+    <div class="container" aria-live="polite">
+      <p class="message">Enter a city above to see the current weather.</p>
+    </div>
+  </body>
+</html>
