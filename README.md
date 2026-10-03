@@ -10,14 +10,6 @@ A small JavaScript weather app. Type in a location and it shows the current cond
 - Loading message while a search is running
 - Error message when a location can't be found or the request fails
 
-## Getting started
-
-```bash
-npm install
-npm run dev     # start the webpack dev server
-npm run build   # build into dist/
-```
-
 ## Project structure
 
 | File                | What it does                                                                     |
@@ -50,9 +42,3 @@ I built the app itself:
 - Added a `<style>` block in `src/template.html` for the new elements, and made the search box required and the results area announced to screen readers
 
 Claude's changes are in the commit marked `Co-Authored-By: Claude`. Everything else in the history is mine.
-
-## To do
-
-- Add a toggle to switch between Fahrenheit and Celsius (right now both are shown)
-- Show a multi-day forecast, not just the current conditions
-- Move the API key out of the source code
