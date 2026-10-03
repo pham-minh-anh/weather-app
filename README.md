@@ -2,6 +2,8 @@
 
 A small JavaScript weather app. Type in a location and it shows the current conditions, temperature and humidity, using live data from the [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api).
 
+Live Demo: https://pham-minh-anh.github.io/weather-app/
+
 ## Features
 
 - Search for any city or place by name
